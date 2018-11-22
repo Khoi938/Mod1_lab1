@@ -6,6 +6,12 @@ namespace Mod1_lab1
     {
         static void Main()
         {
+            bool stuff = false;
+            do
+            {
+                Console.WriteLine("hello something");
+            }
+            while (!stuff);
             string[] stringArray = new string[3];
             stringArray[0] = "hello";
             stringArray[1] = "how";
@@ -24,7 +30,17 @@ namespace Mod1_lab1
                     Console.WriteLine(total);
                 }
             };
+            int y = 0;
             Console.WriteLine(total);
+            while (true)
+            {
+                y += 1;
+                Console.WriteLine(y);
+                if (y == 10000)
+                {
+                    return;
+                }
+            }
    
 
             //bool result = true;
