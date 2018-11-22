@@ -6,11 +6,32 @@ namespace Mod1_lab1
     {
         static void Main()
         {
-            bool result = true;
-            if (result)
-                Console.WriteLine("Result is true");
-                Console.WriteLine("Will this print as part of the if statement?");
-            Console.WriteLine("Does this print at all?");
+            string[] stringArray = new string[3];
+            stringArray[0] = "hello";
+            stringArray[1] = "how";
+            stringArray[2] = "you?";
+            foreach (string i in stringArray)
+            {
+                Console.WriteLine(i);
+            };
+            // print out total of odd
+            int total = 0;
+            for (int x = 0; x<10; x++)
+            {
+                if (x % 2 == 0)
+                {
+                    total += x;
+                    Console.WriteLine(total);
+                }
+            };
+            Console.WriteLine(total);
+   
+
+            //bool result = true;
+            //if (result)
+            //    Console.WriteLine("Result is true");
+            //    Console.WriteLine("Will this print as part of the if statement?");
+            //Console.WriteLine("Does this print at all?");
             //string first;
             //string last;
             //string bDay;
